@@ -2,13 +2,15 @@ package controllers;
 
 import com.google.inject.Inject;
 import play.libs.Json;
+import play.mvc.Controller;
 import play.mvc.Result;
 import repository.ContactRepository;
 import services.api.ContactService;
 
+import static play.mvc.Results.created;
 import static play.mvc.Results.ok;
 
-public class ContactsController {
+public class ContactsController extends Controller {
 
     private ContactService contactService;
 
@@ -26,6 +28,6 @@ public class ContactsController {
     }
 
     public Result save(){
-        return ok();
+        return created(request().body().asJson());
     }
 }
