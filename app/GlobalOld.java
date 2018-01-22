@@ -15,7 +15,7 @@ import play.mvc.Result;
 import scala.Tuple2;
 import scala.collection.Seq;
 
-public class Global extends GlobalSettings {
+public class GlobalOld extends GlobalSettings {
 
     private class ActionWrapper extends Action.Simple {
         public ActionWrapper(Action<?> action) {

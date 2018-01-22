@@ -524,7 +524,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-compress;1.7!commons-compress.pom(pom.original) (3121ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-compress;1.7!commons-compress.pom(pom.original) (1510ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;32 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;32 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-parent;32[0m
@@ -1605,7 +1605,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.jvnet.mimepull#mimepull;1.9.4!mimepull.pom(pom.original) (1147ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.jvnet.mimepull#mimepull;1.9.4!mimepull.pom(pom.original) (1532ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;4 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;4[0m
@@ -1723,7 +1723,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.2.1!commons-lang3.pom(pom.original) (1716ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.2.1!commons-lang3.pom(pom.original) (1531ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;32 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;32 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-parent;32[0m
@@ -1752,7 +1752,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.3.2!httpclient.pom(pom.original) (1223ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.3.2!httpclient.pom(pom.original) (1071ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcomponents-client;4.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcomponents-client;4.3.2 {}[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcomponents-client/4.3.2/ivys/ivy.xml[0m
@@ -1772,7 +1772,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3.2/httpcomponents-client-4.3.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3.2/httpcomponents-client-4.3.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3.2/httpcomponents-client-4.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcomponents-client;4.3.2!httpcomponents-client.pom(pom.original) (1392ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcomponents-client;4.3.2!httpcomponents-client.pom(pom.original) (1385ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#project;7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#project;7 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#project;7[0m
@@ -1833,7 +1833,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.3.1!httpcore.pom(pom.original) (1207ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.3.1!httpcore.pom(pom.original) (1406ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcomponents-core;4.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcomponents-core;4.3.1 {}[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcomponents-core/4.3.1/ivys/ivy.xml[0m
@@ -1853,7 +1853,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3.1/httpcomponents-core-4.3.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3.1/httpcomponents-core-4.3.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3.1/httpcomponents-core-4.3.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcomponents-core;4.3.1!httpcomponents-core.pom(pom.original) (1345ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpcomponents-core;4.3.1!httpcomponents-core.pom(pom.original) (1153ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#project;7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#project;7 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#project;7[0m
@@ -1943,7 +1943,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] commons-codec#commons-codec;1.6!commons-codec.pom(pom.original) (1079ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] commons-codec#commons-codec;1.6!commons-codec.pom(pom.original) (1218ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;22 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;22 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-parent;22[0m
@@ -1979,7 +1979,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.2/httpmime-4.3.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.2/httpmime-4.3.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.2/httpmime-4.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpmime;4.3.2!httpmime.pom(pom.original) (1035ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.httpcomponents#httpmime;4.3.2!httpmime.pom(pom.original) (1916ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.httpcomponents#httpcomponents-client;4.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcomponents-client;4.3.2 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.httpcomponents#httpcomponents-client;4.3.2[0m
@@ -9891,7 +9891,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 49659ms :: artifacts dl 54ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 62406ms :: artifacts dl 50ms[0m
 [0m[[0mdebug[0m] [0m	report for default#rd-leads-api-build;0.1-SNAPSHOT compile produced in /home/fabiano/src/resultados-digitais/play/rd-leads-api/project/target/resolution-cache/reports/default-rd-leads-api-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#rd-leads-api-build;0.1-SNAPSHOT runtime produced in /home/fabiano/src/resultados-digitais/play/rd-leads-api/project/target/resolution-cache/reports/default-rd-leads-api-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#rd-leads-api-build;0.1-SNAPSHOT test produced in /home/fabiano/src/resultados-digitais/play/rd-leads-api/project/target/resolution-cache/reports/default-rd-leads-api-build-test.xml[0m
@@ -9905,5 +9905,5 @@
 [0m[[0mdebug[0m] [0m	report for default#rd-leads-api-build;0.1-SNAPSHOT docs produced in /home/fabiano/src/resultados-digitais/play/rd-leads-api/project/target/resolution-cache/reports/default-rd-leads-api-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#rd-leads-api-build;0.1-SNAPSHOT pom produced in /home/fabiano/src/resultados-digitais/play/rd-leads-api/project/target/resolution-cache/reports/default-rd-leads-api-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#rd-leads-api-build;0.1-SNAPSHOT scala-tool produced in /home/fabiano/src/resultados-digitais/play/rd-leads-api/project/target/resolution-cache/reports/default-rd-leads-api-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (49659ms resolve - 54ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (62406ms resolve - 50ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

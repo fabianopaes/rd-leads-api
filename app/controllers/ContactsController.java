@@ -2,18 +2,16 @@ package controllers;
 
 import com.google.inject.Inject;
 import models.Contact;
-import play.data.Form;
 import play.db.ebean.Transactional;
 import play.libs.Json;
 import play.mvc.BodyParser;
 import play.mvc.Controller;
 import play.mvc.Result;
-import resources.ContactResource;
 import services.api.ContactService;
 
 import java.util.Optional;
 
-public class ContactsController {
+public class ContactsController extends Controller{
 
     private ContactService contactService;
 
@@ -38,7 +36,7 @@ public class ContactsController {
     @BodyParser.Of(BodyParser.Json.class)
     @Transactional
     public Result save(){
-        Form<ContactResource> requestForm = Form.form(ContactResource.class).bindFromRequest();
+/*        Form<ContactResource> requestForm = Form.form(ContactResource.class).bindFromRequest();
 
         if(requestForm.hasErrors()){
             return badRequest(requestForm.errorsAsJson());
@@ -47,7 +45,10 @@ public class ContactsController {
         ContactResource contact = requestForm.get();
         contactService.save(contact);
 
-        return created(Json.toJson(contact));
+        return created(Json.toJson(contact));*/
+
+
+        return ok(request().body().asJson());
     }
 
     public Result getPages(Long contactId){

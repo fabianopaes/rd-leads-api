@@ -4,7 +4,7 @@
 		module="rd-leads-api-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180122202452"
+		publication="20180122211837"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
