@@ -22,5 +22,10 @@ public class BaseRepository<T extends Model> {
         return finder.all();
     }
 
+    public T save(T entity){
+        getEbeanServer().save(entity);
+        return entity;
+    }
+
 
 }

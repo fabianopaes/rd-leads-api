@@ -2,9 +2,11 @@ package controllers;
 
 import play.mvc.Result;
 
+import static play.mvc.Results.ok;
+
 public class HomeController {
 
-    public static Result home(){
-        return HealthchecksController.ping();
+    public Result home(){
+        return ok("");
     }
 }

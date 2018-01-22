@@ -6,7 +6,7 @@ import static play.mvc.Results.ok;
 
 public class HealthchecksController {
 
-    public static Result ping(){
+    public Result ping(){
         return ok("ok;");
     }
 }

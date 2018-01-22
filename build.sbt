@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
   javaCore,
   javaEbean,
   javaWs,
+  "com.google.inject" % "guice" % "4.0-beta4",
   "com.h2database" % "h2" % "1.4.196",
   "org.postgresql" % "postgresql" % "9.3-1102-jdbc4"
 )
