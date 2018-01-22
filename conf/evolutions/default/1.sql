@@ -1,11 +1,27 @@
-# --- Created by Slick DDL
-# To stop Slick DDL generation, remove this comment and start using Evolutions
+# --- Created by Ebean DDL
+# To stop Ebean DDL generation, remove this comment and start using Evolutions
 
 # --- !Ups
 
-create table "USERS" ("NAME" VARCHAR(254) NOT NULL,"ID" SERIAL NOT NULL PRIMARY KEY);
+create table CONTACT (
+  id                        bigint not null,
+  name                      varchar(255),
+  Version                   integer not null,
+  constraint pk_CONTACT primary key (id))
+;
+
+create sequence CONTACT_seq;
+
+
+
 
 # --- !Downs
 
-drop table "USERS";
+SET REFERENTIAL_INTEGRITY FALSE;
+
+drop table if exists CONTACT;
+
+SET REFERENTIAL_INTEGRITY TRUE;
+
+drop sequence if exists CONTACT_seq;
 

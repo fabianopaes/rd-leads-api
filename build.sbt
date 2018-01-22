@@ -11,5 +11,9 @@ libraryDependencies ++= Seq(
   anorm,
   cache,
   ws,
+  javaCore,
+  javaEbean,
+  javaWs,
+  "com.h2database" % "h2" % "1.4.196",
   "org.postgresql" % "postgresql" % "9.3-1102-jdbc4"
 )
