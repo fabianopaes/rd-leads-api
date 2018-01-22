@@ -1,12 +1,14 @@
 package controllers;
 
+import play.libs.Json;
+import play.mvc.Controller;
 import play.mvc.Result;
+import resources.WelcomeResource;
 
-import static play.mvc.Results.ok;
-
-public class HomeController {
+public class HomeController extends Controller {
 
     public Result home(){
-        return ok("");
+        WelcomeResource resource = WelcomeResource.create();
+        return ok(Json.toJson(resource));
     }
 }

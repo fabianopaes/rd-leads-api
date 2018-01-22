@@ -1,10 +1,9 @@
 package models;
 
+import play.data.validation.Constraints;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "CONTACT")
@@ -14,8 +13,13 @@ public class Contact extends BaseModel{
     @Column(name = "id")
     public Long id;
 
-    @Column(name = "name")
-    public String name;
+    @Column(name = "email")
+    @Constraints.Required
+    @Constraints.Email
+    @NotNull
+    public String email;
+
+
 
     @Override
     public Long getId() {

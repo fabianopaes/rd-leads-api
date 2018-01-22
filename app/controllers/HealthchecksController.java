@@ -1,12 +1,11 @@
 package controllers;
 
+import play.mvc.Controller;
 import play.mvc.Result;
 
-import static play.mvc.Results.ok;
-
-public class HealthchecksController {
+public class HealthchecksController extends Controller {
 
     public Result ping(){
-        return ok("ok;");
+        return ok("ok");
     }
 }

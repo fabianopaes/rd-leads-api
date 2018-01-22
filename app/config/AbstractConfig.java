@@ -7,6 +7,7 @@ import controllers.ContactsController;
 import play.Application;
 import play.GlobalSettings;
 import repository.ContactRepository;
+import repository.PageRepository;
 import services.api.ContactService;
 
 public abstract class AbstractConfig extends GlobalSettings {
@@ -22,6 +23,7 @@ public abstract class AbstractConfig extends GlobalSettings {
             protected void configure() {
                 bind(ContactService.class).toInstance(getContactServiceInstance());
                 bind(ContactRepository.class).toInstance(getContactRepositoryInstance());
+                bind(PageRepository.class).toInstance(getPageRepositoryInstance());
                 requestStaticInjection(ContactsController.class);
             }
         });
@@ -35,5 +37,7 @@ public abstract class AbstractConfig extends GlobalSettings {
     public abstract ContactService  getContactServiceInstance();
 
     public abstract ContactRepository  getContactRepositoryInstance();
+
+    public abstract PageRepository getPageRepositoryInstance();
 
 }

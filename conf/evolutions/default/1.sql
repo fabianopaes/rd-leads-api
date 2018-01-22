@@ -5,7 +5,7 @@
 
 create table CONTACT (
   id                        bigint not null,
-  name                      varchar(255),
+  email                     varchar(255) not null,
   Version                   integer not null,
   constraint pk_CONTACT primary key (id))
 ;

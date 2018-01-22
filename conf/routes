@@ -1,10 +1,9 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
-
-# Home page
 GET     /                           @controllers.HomeController.home()
 GET     /v1/leads/ping                           @controllers.HealthchecksController.ping()
 GET     /v1/leads/contacts                           @controllers.ContactsController.list()
 POST     /v1/leads/contacts                           @controllers.ContactsController.save()
+GET     /v1/leads/contacts/:contactId                           @controllers.ContactsController.byId(contactId: Long)
+GET     /v1/leads/contacts/:contactId/pages                           @controllers.ContactsController.getPages(contactId : Long)
+
+
 

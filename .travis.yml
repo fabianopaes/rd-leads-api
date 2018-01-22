@@ -9,5 +9,5 @@ env:
 
 sudo: false
 
-after_success:
+script:
   - ./activator clean compile test

@@ -1,16 +1,19 @@
 package controllers;
 
 import com.google.inject.Inject;
+import models.Contact;
+import play.data.Form;
+import play.db.ebean.Transactional;
 import play.libs.Json;
+import play.mvc.BodyParser;
 import play.mvc.Controller;
 import play.mvc.Result;
-import repository.ContactRepository;
+import resources.ContactResource;
 import services.api.ContactService;
 
-import static play.mvc.Results.created;
-import static play.mvc.Results.ok;
+import java.util.Optional;
 
-public class ContactsController extends Controller {
+public class ContactsController {
 
     private ContactService contactService;
 
@@ -19,15 +22,41 @@ public class ContactsController extends Controller {
         this.contactService = contactService;
     }
 
-
     public Result list(){
-        ContactRepository repository = new ContactRepository();
-        repository.save();
-        return ok(Json.toJson(repository.findAll()));
-
+        return ok(Json.toJson(contactService.findAll()));
     }
 
+    public Result byId(Long contactId){
+        Optional<Contact> contact = contactService.findByIdOptional(contactId);
+        if(contact.isPresent()){
+            return ok(Json.toJson(contact.get()));
+        }
+        return notFound();
+    }
+
+
+    @BodyParser.Of(BodyParser.Json.class)
+    @Transactional
     public Result save(){
-        return created(request().body().asJson());
+        Form<ContactResource> requestForm = Form.form(ContactResource.class).bindFromRequest();
+
+        if(requestForm.hasErrors()){
+            return badRequest(requestForm.errorsAsJson());
+        }
+
+        ContactResource contact = requestForm.get();
+        contactService.save(contact);
+
+        return created(Json.toJson(contact));
     }
+
+    public Result getPages(Long contactId){
+        Optional<Contact> contact = contactService.findByIdOptional(contactId);
+        if(! contact.isPresent()){
+            return notFound();
+        }
+        //fixme should return the page here
+        return ok(Json.toJson(contact.get()));
+    }
+
 }
