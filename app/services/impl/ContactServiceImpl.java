@@ -3,6 +3,7 @@ package services.impl;
 import com.google.inject.Inject;
 import models.Contact;
 import models.Page;
+import org.joda.time.DateTime;
 import org.springframework.util.CollectionUtils;
 import repository.ContactRepository;
 import repository.PageRepository;
@@ -68,6 +69,7 @@ public class ContactServiceImpl implements ContactService{
         Page page = new Page();
         page.url = pageResource.getUrl();
         page.contact = contact;
+        page.accessTimestamp = new DateTime().withMillis(pageResource.getAccessTimestamp());
         pageRepository.save(page);
     }
 

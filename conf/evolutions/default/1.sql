@@ -5,6 +5,8 @@
 
 create table CONTACT (
   id                        bigint not null,
+  CREATED                   timestamp,
+  UPDATED                   timestamp,
   email                     varchar(255) not null,
   Version                   integer not null,
   constraint pk_CONTACT primary key (id))
@@ -12,8 +14,11 @@ create table CONTACT (
 
 create table PAGE (
   id                        bigint not null,
+  CREATED                   timestamp,
+  UPDATED                   timestamp,
   URL                       varchar(255),
   CONTACT_ID                bigint,
+  ACCESS_TIMESTAMP          timestamp,
   Version                   integer not null,
   constraint pk_PAGE primary key (id))
 ;

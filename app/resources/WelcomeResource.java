@@ -8,6 +8,7 @@ public class WelcomeResource {
     private String description;
     private String author;
     private String version;
+    private String documentation;
 
     public static WelcomeResource create(){
         WelcomeResource resource = new WelcomeResource();
@@ -15,6 +16,8 @@ public class WelcomeResource {
         resource.setDescription(Play.application().configuration().getString("application.info.description"));
         resource.setAuthor(Play.application().configuration().getString("application.info.author"));
         resource.setVersion(Play.application().configuration().getString("application.info.version"));
+        resource.setVersion(Play.application().configuration().getString("application.info.version"));
+        resource.setDocumentation(Play.application().configuration().getString("application.info.documentation"));
         return  resource;
     }
 
@@ -48,5 +51,13 @@ public class WelcomeResource {
 
     public void setVersion(String version) {
         this.version = version;
+    }
+
+    public String getDocumentation() {
+        return documentation;
+    }
+
+    public void setDocumentation(String documentation) {
+        this.documentation = documentation;
     }
 }

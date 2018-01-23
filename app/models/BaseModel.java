@@ -2,6 +2,9 @@ package models;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import deserializers.DateTimeDeserializer;
 import org.joda.time.DateTime;
 import play.db.ebean.Model;
 
@@ -26,15 +29,19 @@ public abstract class BaseModel extends Model {
     @Column(name = "Version")
     public int version;
 
-/*    @Column(name="CREATED")
+    @Column(name="CREATED")
+    @JsonSerialize(using = DateTimeSerializer.class)
+    @JsonDeserialize(using = DateTimeDeserializer.class)
     public DateTime created;
 
     @Column(name="UPDATED")
-    public DateTime updated;*/
+    @JsonSerialize(using = DateTimeSerializer.class)
+    @JsonDeserialize(using = DateTimeDeserializer.class)
+    public DateTime updated;
 
     public BaseModel(){
-/*        created = new DateTime();
-        updated = new DateTime();*/
+        created = new DateTime();
+        updated = new DateTime();
     }
 
 
