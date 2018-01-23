@@ -1,7 +1,7 @@
 {
-  "name": "play-heroku-seed",
-  "description": "Seed app for Play, Heroku and Postgres with demo CRUD model, view, controller.",
-  "repository": "https://github.com/mkbehbehani/play-heroku-seed",
+  "name": "rd-rest-api",
+  "description": "rest api to storage leads data",
+  "repository": "https://github.com/fabianopaes/rd-leads-api",
   "addons": ["heroku-postgresql:hobby-dev", "papertrail"],
   "success_url": "/",
   "keywords": ["play", "java", "postgresql"]
