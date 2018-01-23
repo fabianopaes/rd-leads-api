@@ -14,6 +14,17 @@ public class ContactResource {
     @Valid
     private List<PageResource> pages;
 
+    public ContactResource(){}
+
+    public ContactResource(String email, List<PageResource> pages) {
+        this.email = email;
+        this.pages = pages;
+    }
+
+    public ContactResource(String email) {
+        this.email = email;
+    }
+
     public String getEmail() {
         return email;
     }

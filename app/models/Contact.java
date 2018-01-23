@@ -1,17 +1,15 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import play.data.validation.Constraints;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "CONTACT")
 public class Contact extends BaseModel{
-
-    @Id
-    @Column(name = "id")
-    public Long id;
 
     @Column(name = "email")
     @Constraints.Required
@@ -20,10 +18,8 @@ public class Contact extends BaseModel{
     public String email;
 
 
-
-    @Override
-    public Long getId() {
-        return id;
-    }
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "contact")
+    @JsonManagedReference
+    public List<Page> pages;
 
 }

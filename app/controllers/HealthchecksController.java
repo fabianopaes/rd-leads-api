@@ -6,6 +6,6 @@ import play.mvc.Result;
 public class HealthchecksController extends Controller {
 
     public Result ping(){
-        return ok("ok");
+        return ok("okay");
     }
 }

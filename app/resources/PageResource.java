@@ -1,11 +1,17 @@
 package resources;
 
-import javax.validation.Valid;
+import play.data.validation.Constraints;
 
 public class PageResource {
 
-    @Valid
+    @Constraints.Required
     private String url;
+
+    public PageResource(){}
+
+    public PageResource(String url) {
+        this.url = url;
+    }
 
     public String getUrl() {
         return url;

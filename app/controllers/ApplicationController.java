@@ -1,7 +1,9 @@
 package controllers;
 
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import resources.WelcomeResource;
 
 public class ApplicationController extends Controller{
 
@@ -14,6 +16,11 @@ public class ApplicationController extends Controller{
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Referer, User-Agent");
         response().setHeader("Content-Type", "text/plain charset=UTF-8");
         return ok();
+    }
+
+    public Result home(){
+        WelcomeResource resource = WelcomeResource.create();
+        return ok(Json.toJson(resource));
     }
 
 
